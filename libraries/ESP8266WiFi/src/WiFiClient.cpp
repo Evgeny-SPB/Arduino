@@ -50,7 +50,7 @@ WiFiClient* SList<WiFiClient>::_s_first = 0;
 WiFiClient::WiFiClient()
 : _client(0)
 {
-    _timeout = 5000;
+    _timeout = 200;
     WiFiClient::_add(this);
 }
 
